@@ -14,7 +14,7 @@ public class ex8V {
 			soma += vet[i];
 
 		}
-		JOptionPane.showMessageDialog(null, "Resultado da soma = "+soma);
+		JOptionPane.showMessageDialog(null, "Resultado da soma 5= "+soma);
 
 	}
 
