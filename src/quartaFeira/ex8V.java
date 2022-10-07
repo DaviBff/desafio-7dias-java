@@ -6,16 +6,24 @@ public class ex8V {
 
 	public static void main(String[] args) {
 		int vet[] = new int[3];
-		Integer soma = 0;
 		for (int i = 0; i < vet.length; i++) {
-			String num = JOptionPane.showInputDialog("Insira um numero: ");
-			Integer num1 = Integer.valueOf(num);
-			vet[i] = num1;
-			soma += vet[i];
+			vet[i]= Integer.valueOf(JOptionPane.showInputDialog("Insira um numero: "));
+			
 
 		}
-		JOptionPane.showMessageDialog(null, "Resultado da soma 5= "+soma);
+		
+		JOptionPane.showMessageDialog(null, "Resultado da soma = "+somaMain(vet));
 
+	}
+
+	private static Integer somaMain(int[] vet) {
+		Integer soma = 0;
+		for (int i = 0; i < vet.length; i++) {
+			soma += vet[i];
+		}
+		
+		
+		return soma;
 	}
 
 }
